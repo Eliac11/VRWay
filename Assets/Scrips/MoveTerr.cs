@@ -31,12 +31,13 @@ public class MoveTerr : MonoBehaviour
     {
         foreach(Transform i in terrs)
         {
-            i.position += new Vector3(0, 0, speed);
-
             if (i.position.z >= EndZ)
             {
                 i.position = new Vector3(i.position.x, i.position.y, StartZ);
             }
+            i.position += new Vector3(0, 0, speed);
+
+            
         }
     }
 }
