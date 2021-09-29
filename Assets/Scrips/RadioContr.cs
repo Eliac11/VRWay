@@ -25,6 +25,7 @@ public class RadioContr : MonoBehaviour
         {
                 leghtnowclip = c.length;
                 audioS.clip = c;
+                audioS.Play();
         }
     }
     public void Startplay()
@@ -39,7 +40,7 @@ public class RadioContr : MonoBehaviour
         if (leghtnowclip < 0)
         {
             SetRandomclip();
-            audioS.Play();
+            
         }
     }
 }
