@@ -97,16 +97,16 @@ model.transform.eulerAngles = new Vector3(0,head.eulerAngles.y,0);
     /// </summary>
 void reposfoot(Transform footp)
     {
-        Vector3 d = new Vector3(transform.position.x - footp.position.x, 0, transform.position.z - footp.position.z);
+        Vector3 d = new Vector3(head.position.x - footp.position.x, 0, head.position.z - footp.position.z);
         if (d.magnitude > maxsteprad)
         {
-            Vector3 nap = (transform.position - lastpos).normalized;
+            Vector3 nap = (head.position - lastpos).normalized;
             Vector3 newpos = Vector3.zero;
 
-            newpos = transform.position + nap * (maxsteprad);
+            newpos = head.position + nap * (maxsteprad*0.999f);
 
 
-            newpos.y = transform.position.y;
+            newpos.y = head.position.y - lastheight/2;
 
 
             footp.position = newpos;
@@ -118,7 +118,7 @@ void reposfoot(Transform footp)
         reposfoot(LeftStepPoint);
         reposfoot(RightStepPoint);
 
-        lastpos = transform.position;
+        lastpos = head.position;
     }
 
 
