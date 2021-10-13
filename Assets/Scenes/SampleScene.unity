@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17646587, g: 0.2208718, b: 0.3031856, a: 1}
+  m_IndirectSpecularColor: {r: 0.17646602, g: 0.2208721, b: 0.30318642, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -755,7 +755,11 @@ Transform:
   m_GameObject: {fileID: 114734962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16, y: -31.992, z: -186.21645}
+<<<<<<< Updated upstream
   m_LocalScale: {x: 207.93994, y: 81.44, z: 24.169495}
+=======
+  m_LocalScale: {x: 207.93994, y: 60.902683, z: 24.169495}
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -848,7 +852,11 @@ Transform:
   m_GameObject: {fileID: 119592270}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 67.4, y: -31.992, z: -5}
+<<<<<<< Updated upstream
   m_LocalScale: {x: 487.432, y: 81.44, z: 24.169495}
+=======
+  m_LocalScale: {x: 487.432, y: 60.902683, z: 24.169495}
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
@@ -3244,7 +3252,11 @@ Transform:
   m_GameObject: {fileID: 1131612103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16, y: -31.992, z: 176}
+<<<<<<< Updated upstream
   m_LocalScale: {x: 207.93994, y: 81.44, z: 24.169495}
+=======
+  m_LocalScale: {x: 207.93994, y: 60.902683, z: 24.169495}
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -3483,7 +3495,11 @@ Transform:
   m_GameObject: {fileID: 1223915487}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -96.8, y: -31.992, z: -5}
+<<<<<<< Updated upstream
   m_LocalScale: {x: 487.432, y: 81.44, z: 24.169495}
+=======
+  m_LocalScale: {x: 487.432, y: 60.902683, z: 24.169495}
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14

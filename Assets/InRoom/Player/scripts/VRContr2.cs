@@ -103,10 +103,10 @@ void reposfoot(Transform footp)
             Vector3 nap = (transform.position - lastpos).normalized;
             Vector3 newpos = Vector3.zero;
 
-            newpos = transform.position + nap * (maxsteprad/1.2f);
+            newpos = transform.position + nap * (maxsteprad);
 
 
-            newpos.y = transform.position.y - lastheight / 2;
+            newpos.y = transform.position.y;
 
 
             footp.position = newpos;
