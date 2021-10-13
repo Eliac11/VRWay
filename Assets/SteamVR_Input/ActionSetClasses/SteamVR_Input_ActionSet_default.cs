@@ -105,6 +105,22 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Vector2 MoveNap
+        {
+            get
+            {
+                return SteamVR_Actions.default_MoveNap;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean JumpPress
+        {
+            get
+            {
+                return SteamVR_Actions.default_JumpPress;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
