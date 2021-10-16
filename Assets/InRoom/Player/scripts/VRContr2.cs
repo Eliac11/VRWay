@@ -43,6 +43,8 @@ public class VRContr2 : MonoBehaviour
     public Transform LeftStepPoint;
     public Transform RightStepPoint;
 
+    public LayerMask layers;
+
     private Vector3 lastpos;
     private float lastheight;
 
@@ -95,6 +97,20 @@ model.transform.eulerAngles = new Vector3(0,head.eulerAngles.y,0);
     /// <summary>
     /// Nogi
     /// </summary>
+
+Vector3 getLowerPoint(Vector3 targpos){
+
+
+    RaycastHit hit;
+
+    if(Physics.Raycast(new Vector3(targpos.x,targpos.y+lastheight/2,targpos.z), transform.TransformDirection(-Vector3.up), out hit, lastheight,layers)){
+
+        Debug.DrawRay(new Vector3(targpos.x,targpos.y+lastheight/2,targpos.z), transform.TransformDirection(-Vector3.up) * hit.distance, Color.black);
+        return hit.point;
+    }
+    return new Vector3(0,0,0);
+}
+
 void reposfoot(Transform footp)
     {
         Vector3 d = new Vector3(head.position.x - footp.position.x, 0, head.position.z - footp.position.z);
@@ -106,10 +122,10 @@ void reposfoot(Transform footp)
             newpos = head.position + nap * (maxsteprad*0.999f);
 
 
-            newpos.y = head.position.y - lastheight/2;
+            newpos.y = head.position.y - lastheight/1.4f;
 
 
-            footp.position = newpos;
+            footp.position = getLowerPoint(newpos);
         }
     }
 
